@@ -20,15 +20,18 @@
         </div>
       </form>
 
-        <form id="form_id">
-          <div class = "form-group">
-            <label type="text">Withdraw or Deposit?</label>
-            <input type="text" id="withdraw" placeholder="Amount to Withdraw!">
-            <input type="text" id="deposit" placeholder="Amount to Deposit!">
-          </div>
-        </form>
-
-
+      <form id="withdraw-deposit">
+        <div class="form-group">
+          <label type="text">Withdraw or Deposit?</label>
+          <input type="text" id="withdraw" placeholder="Amount to Withdraw!">
+          <input type="text" id="deposit" placeholder="Amount to Deposit!">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+      <div id="balance">
+        <h4>Your bank account's balance</h4>
+        <p id="response"></p>
+      </div>
 
     </div>
   </body>

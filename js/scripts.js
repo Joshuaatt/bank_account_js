@@ -55,6 +55,8 @@ $(function() {
       });
 
      $("#response").text("$ " + newBankAccount.balance);
+     $("#balance").show();
+     $(".user").text(newBankAccount.name)
      var inputName = $("input#name").val("");
      var initialDeposit = $("input#initial-deposit").val("");
   });

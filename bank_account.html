@@ -13,8 +13,9 @@
       <form id="sign-up">
         <div class="form-group">
           <label type="text">Sign up for a bank account</label>
-          <input type="text" id="name" class="form-group" placeholder="Your name">
-          <input type="text" id="initial-deposit" class="form-group" placeholder="Initial deposit">
+          <input type="text" id="name" class="form-group" placeholder="Your name" required>
+          <label for="number">Initial Deposit</label>
+          <input type="number" step=".01" id="initial-deposit" class="form-group" value="0" placeholder="Initial deposit">
 
           <button type="submit">Create bank account</button>
         </div>
@@ -22,14 +23,15 @@
 
       <form id="withdraw-deposit">
         <div class="form-group">
-          <label type="text">Withdraw or Deposit?</label>
-          <input type="text" id="withdraw" placeholder="Amount to Withdraw!">
-          <input type="text" id="deposit" placeholder="Amount to Deposit!">
+          <label type="text" for="withdraw">Withdraw?</label>
+          <input type="number" step=".01" id="withdraw" value="0" placeholder="Amount to Withdraw!">
+          <label for="deposit">Deposit?</label>
+          <input type="number" step=".01" id="deposit" value= "0" placeholder="Amount to Deposit!">
           <button type="submit">Submit</button>
         </div>
       </form>
       <div id="balance">
-        <h4>Your bank account's balance</h4>
+        <h4><span class="user"></span>'s balance</h4>
         <p id="response"></p>
       </div>
 
